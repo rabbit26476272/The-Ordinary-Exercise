@@ -37,13 +37,26 @@ li.nav-item {
 li.nav-menu {
 	margin-top: 40px;
 }
+@media only screen and (max-width: 768px) {
+	li.nav-menu {
+		margin-top: 20px;
+		margin: 10px auto;
+	}
+}
+
 .nav-link img:hover {
 	padding: 3px; /*滑鼠移至圖片，圖片移動的距離*/
 	width: 1px; /*滑鼠移至圖片，圖片邊線寬度*/
 }
 li.nav-menu img {
+	display: block;
 	width: 20px;
 	height: 20px;
+}
+@media only screen and (max-width: 768px) {
+	li.nav-menu img {
+		display: none;
+	}
 }
 .footer-link {
 	display: flex;
@@ -51,11 +64,29 @@ li.nav-menu img {
 .form-inline {
 	margin-top: 40px;
 }
+
 .btn img {
 	width: 20px;
 	height: 20px;
 }
-@media (min-width: 768px) {
+.section_menu {
+	display: none;
+	padding: 0 10px;
+}
+@media only screen and (max-width: 768px) {
+	.section_menu {
+		display: inline;
+	}
+}
+.showSerach {
+	display: block;
+}
+@media only screen and (max-width: 1024px) {
+	.showSerach {
+		display: none;
+	}
+}
+@media only screen and (max-width: 768px) {
 	/*nav選單*/
 	.navbar {
 		padding-left: 50px !important;
@@ -103,10 +134,24 @@ li.nav-menu img {
 	width: 6%;
 	padding-right: 20px;
 }
+@media only screen and (max-width: 768px) {
+	.title-icon {
+		width: 8%;
+		padding-right: 10px;
+	}
+}
+@media only screen and (max-width: 550px) {
+	.title-icon {
+		width: 12%;
+		padding-top: 8px;
+		padding-right: 10px;
+	}
+}
 .the-title {
 	display: flex;
 	justify-content: center;
 }
+
 .title-icon img {
 	width: 100%;
 }
@@ -115,7 +160,20 @@ li.nav-menu img {
 	font-size: 18px;
 }
 .award-display {
+	display: inline;
 	padding-top: 50px 0;
+	align-items: center;
+}
+@media only screen and (max-width: 768px) {
+	.award-display {
+		display: block;
+		padding-top: 100px;
+	}
+}
+@media only screen and (max-width: 550px) {
+	.award-display {
+		display: none;
+	}
 }
 .award-items {
 	display: inline-flex;
@@ -216,6 +274,7 @@ figure img {
 }
 
 .item-box-blog {
+	height: 100%;
 	border-radius: 10px;
 	border: 1px solid #bebbbb;
 	text-align: center;
@@ -290,12 +349,17 @@ figure img {
 	overflow: hidden;
 }
 
-.mt-10 {
+.mt {
 	float: left;
-	margin-top: -10px;
-	padding-top: 10px;
+	position: fixed;
+	bottom: 10px;
 }
-
+@media only screen and (max-width: 550px) {
+	.mt {
+		position: relative;
+		margin-top: 8px;
+	}
+}
 .btn.bg-blue-ui.white.read {
 	cursor: pointer;
 	padding: 4px 20px;
@@ -326,6 +390,7 @@ figure img {
 	border-radius: 0.25rem;
 	padding: 20px;
 }
+
 .hovereffect {
 	width: 100%;
 	height: 100%;
@@ -405,6 +470,7 @@ figure img {
 	-ms-transform: scale(1);
 	transform: scale(1);
 }
+
 .star {
 	padding-left: 20px;
 	height: 20px;
@@ -420,6 +486,16 @@ figure img {
 	width: 8%;
 	filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.2));
 }
+@media only screen and (max-width: 1024px) {
+	.star {
+		display: none;
+	}
+}
+@media only screen and (max-width: 1024px) {
+	.star {
+		display: block;
+	}
+}
 .product img:hover {
 	opacity: 0.8;
 }
@@ -427,7 +503,17 @@ figure img {
 	height: 15px;
 	padding-top: 10px;
 }
-
+@media only screen and (max-width: 1024px) {
+	.product_name {
+		font-size: 10px;
+		height: 15px;
+	}
+}
+@media only screen and (max-width: 550px) {
+	.product_name {
+		font-size: 20px;
+	}
+}
 .contact {
 	height: 100%;
 	padding-top: 100px;
