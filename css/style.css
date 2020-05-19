@@ -120,6 +120,14 @@ li.nav-menu img {
 	font-size: 20px;
 	font-weight: bold;
 }
+#about-us-story {
+	display: inline;
+}
+@media only screen and (max-width: 550px) {
+	#about-us-story {
+		display: none;
+	}
+}
 .title_line {
 	border: 0;
 	height: 1px;
@@ -129,6 +137,20 @@ li.nav-menu img {
 		rgba(167, 167, 167.75),
 		rgba(167, 167, 167, 0.5)
 	);
+}
+
+@media only screen and (max-width: 550px) {
+	#product-card {
+		padding: 5px 10px;
+	}
+}
+#contact-line {
+	display: block;
+}
+@media only screen and (max-width: 550px) {
+	#contact-line {
+		display: none;
+	}
 }
 .title-icon {
 	width: 6%;
@@ -482,6 +504,15 @@ figure img {
 .star-score {
 	filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.2));
 }
+@media only screen and (max-width: 768px) {
+	.star {
+		padding: 12px 0;
+	}
+	.star p {
+		font-size: 10px;
+		padding: 0;
+	}
+}
 .star img {
 	width: 8%;
 	filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.2));
@@ -575,6 +606,12 @@ figure img {
 	width: 10%;
 	margin-right: 10px;
 }
+@media only screen and (max-width: 768px) {
+	.contact-link img {
+		width: 20%;
+	}
+}
+
 input[type="submit"] {
 	background-color: #abd0ce;
 	color: white;
