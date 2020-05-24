@@ -20,10 +20,15 @@ span {
 p {
 	font-size: 16px;
 }
+.navbar {
+	filter: drop-shadow(8px 8px 12px rgba(0, 0, 0, 0.1));
+}
 .navbar-brand img {
 	height: 50px;
 }
+
 .navbar-brand img:hover {
+	transition: 0.3s;
 	opacity: 0.5;
 }
 .form-inline {
@@ -43,10 +48,14 @@ li.nav-menu {
 		margin: 10px auto;
 	}
 }
-
 .nav-link img:hover {
-	padding: 3px; /*滑鼠移至圖片，圖片移動的距離*/
-	width: 1px; /*滑鼠移至圖片，圖片邊線寬度*/
+	padding: 15px;
+	transition: 0.1s;
+	/*
+	transition: 0.1s;
+	padding: 3px; /*滑鼠移至圖片，圖片移動的距離
+	width: 1px; /*滑鼠移至圖片，圖片邊線寬度
+	*/
 }
 li.nav-menu img {
 	display: block;
@@ -73,13 +82,29 @@ li.nav-menu img {
 	display: none;
 	padding: 0 10px;
 }
+.section_menu:active {
+	color: #ffffff;
+	background-color: #f0e5de;
+	padding: 0 60px;
+}
 @media only screen and (max-width: 768px) {
 	.section_menu {
-		display: inline;
+		display: block;
+		font-size: 2em;
 	}
 }
+@media only screen and (max-width: 550px) {
+	.section_menu {
+		font-size: 1em;
+	}
+}
+
 .showSerach {
 	display: block;
+}
+.showSerach:hover {
+	transition: 0.2s;
+	padding: 10px;
 }
 @media only screen and (max-width: 1024px) {
 	.showSerach {
@@ -93,8 +118,23 @@ li.nav-menu img {
 		padding-right: 50px !important;
 	}
 }
-.dropdown-menu {
+.showSerach img:hover {
+	padding: 10px;
+}
+.dropdown_menu {
+	display: none;
 	font-size: 10px;
+}
+#navbarDropdownMenuLink {
+	position: relative;
+	display: inline-block;
+}
+#navbarDropdownMenuLink:hover {
+	transition: 0.3s;
+	background-color: #f0e5de;
+}
+.nav-item:hover .dropdown_menu {
+	display: block;
 }
 .banner {
 	margin-top: 76px;
@@ -130,15 +170,20 @@ li.nav-menu img {
 }
 .title_line {
 	border: 0;
-	height: 1px;
-	background-image: linear-gradient(
-		to right,
-		rgba(167, 167, 167, 0.5),
-		rgba(167, 167, 167.75),
-		rgba(167, 167, 167, 0.5)
-	);
+	width: 20%;
+	border: 0;
+	margin-top: 0;
+	color: #f1d1d1;
+	background-color: #f1d1d1;
+	height: 6px;
 }
 
+#product-card {
+	filter: drop-shadow(2px 2px 4px rgba(145, 142, 142, 0.1));
+}
+#product-card:hover {
+	filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.1));
+}
 @media only screen and (max-width: 550px) {
 	#product-card {
 		padding: 5px 10px;
@@ -357,6 +402,7 @@ figure img {
 
 .item-box-blog-heading a {
 	color: rgb(179, 92, 92);
+	transition: 0.5s;
 	text-decoration: none;
 }
 .item-box-blog-heading a:hover {
@@ -411,9 +457,12 @@ figure img {
 }
 .btn.white.read:hover {
 	color: #303960 !important;
-	background-color: #aacfcf;
+	background-color: #f5a31a;
 }
-
+.btn.white.read:active {
+	color: #303960 !important;
+	background-color: #f5a31a;
+}
 .product {
 	background-color: #ffffff;
 	padding: 70px 0;
@@ -475,7 +524,8 @@ figure img {
 	position: relative;
 	font-size: 17px;
 	padding: 10px;
-	background: rgba(255, 54, 54, 0.6);
+	background-color: rgba(255, 0, 0, 0.3);
+	color: #fff !important;
 }
 
 .hovereffect a.info {
