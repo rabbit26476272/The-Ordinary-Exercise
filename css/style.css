@@ -259,9 +259,7 @@ li.nav-menu img {
 	margin-top: -20px;
 	padding-top: 20px;
 }
-.bg-blue-ui {
-	background-color: #708198 !important;
-}
+
 figure img {
 	width: 300px;
 }
@@ -303,11 +301,19 @@ figure img {
 	z-index: 4;
 	padding: 20px;
 }
-
+@media only screen and (max-width: 550px) {
+	.item-box-blog {
+		padding: 20px;
+	}
+}
 .item-box-blog-image {
 	position: relative;
 }
-
+@media only screen and (max-width: 550px) {
+	.item-box-blog-image {
+		display: none;
+	}
+}
 .item-box-blog-image figure img {
 	border-radius: 10px;
 	width: 100%;
@@ -357,6 +363,12 @@ figure img {
 	color: rgb(253, 190, 190);
 	text-decoration: none;
 }
+
+@media only screen and (max-width: 550px) {
+	.item-box-blog-heading {
+		font-size: 10px;
+	}
+}
 .item-box-blog-data p {
 	font-size: 13px;
 }
@@ -378,19 +390,28 @@ figure img {
 }
 @media only screen and (max-width: 550px) {
 	.mt {
+		margin-top: 10px;
 		position: relative;
-		margin-top: 8px;
+		float: right;
 	}
 }
-.btn.bg-blue-ui.white.read {
+.btn.white.read {
 	cursor: pointer;
 	padding: 4px 20px;
 	float: left;
 	margin-top: 10px;
+	background-color: #8ec6c5;
+	transition: 0.5s;
 }
-
-.btn.bg-blue-ui.white.read:hover {
-	box-shadow: 0px 5px 15px inset #93aac9;
+@media only screen and (max-width: 550px) {
+	.btn.white.read {
+		padding: 4px 20px;
+		font-size: 1em;
+	}
+}
+.btn.white.read:hover {
+	color: #303960 !important;
+	background-color: #aacfcf;
 }
 
 .product {
@@ -462,10 +483,21 @@ figure img {
 	text-decoration: none;
 	padding: 7px 14px;
 	border: 1px solid rgb(0, 0, 0);
-	margin: 50px 0 0 0;
+	margin: 120px 0 0 0;
 	background-color: transparent;
 }
-
+@media only screen and (max-width: 768px) {
+	.hovereffect a.info {
+		margin: 30px 0 0 0;
+	}
+}
+@media only screen and (max-width: 550px) {
+	.hovereffect a.info {
+		font-size: 15px;
+		padding: 4px 8px;
+		margin: 10px 0 0 0;
+	}
+}
 .hovereffect a.info:hover {
 	box-shadow: 0 0 5px rgb(51, 51, 51);
 }
@@ -542,7 +574,7 @@ figure img {
 }
 @media only screen and (max-width: 550px) {
 	.product_name {
-		font-size: 20px;
+		font-size: 10px;
 	}
 }
 .contact {
