@@ -20,7 +20,6 @@ span {
 p {
 	font-size: 16px;
 }
-
 .collapse {
 	display: none;
 }
@@ -33,7 +32,11 @@ p {
 	filter: drop-shadow(8px 8px 12px rgba(0, 0, 0, 0.1));
 }
 .navbar-brand img {
-	height: 50px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px 0 25px 20px;
+	height: 70px;
 }
 
 .navbar-brand img:hover {
@@ -58,7 +61,7 @@ li.nav-menu {
 	}
 }
 .nav-link img:hover {
-	padding: 15px;
+	padding: 10px;
 	transition: 0.1s;
 	/*
 	transition: 0.1s;
@@ -107,13 +110,27 @@ li.nav-menu img {
 		font-size: 1em;
 	}
 }
-
+#icon-menu {
+	position: absolute;
+	top: 0;
+	right: 2%;
+}
+@media only screen and (max-width: 768px) {
+	#icon-menu {
+		position: static;
+	}
+}
 .showSerach {
 	display: block;
+	position: absolute;
+	top: 0;
+	left: 60%;
 }
+
 .showSerach:hover {
+	filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.1));
 	transition: 0.2s;
-	padding: 10px;
+	padding: 5px;
 }
 @media only screen and (max-width: 1024px) {
 	.showSerach {
