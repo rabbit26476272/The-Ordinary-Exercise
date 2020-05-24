@@ -38,7 +38,9 @@ p {
 	padding: 10px 0 25px 20px;
 	height: 70px;
 }
-
+.dropdown-item:active {
+	background-color: #f1d1d1 !important;
+}
 .navbar-brand img:hover {
 	transition: 0.3s;
 	opacity: 0.5;
