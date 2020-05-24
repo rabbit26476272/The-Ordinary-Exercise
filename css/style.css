@@ -96,6 +96,11 @@ li.nav-menu img {
 	display: none;
 	padding: 0 10px;
 }
+.section_menu:hover {
+	color: #ffffff;
+	background-color: #f0e5de;
+	padding: 0 60px;
+}
 .section_menu:active {
 	color: #ffffff;
 	background-color: #f0e5de;
