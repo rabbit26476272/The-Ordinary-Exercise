@@ -20,6 +20,15 @@ span {
 p {
 	font-size: 16px;
 }
+
+.collapse {
+	display: none;
+}
+@media only screen and (max-width: 768px) {
+	.collapse {
+		display: inline;
+	}
+}
 .navbar {
 	filter: drop-shadow(8px 8px 12px rgba(0, 0, 0, 0.1));
 }
